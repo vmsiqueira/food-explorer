@@ -23,6 +23,7 @@ module.exports = {
       gray: {
         700: '#7C7C8A',
         500: '#C4C4CC', 
+        100: '#FFFAF1',
       },
 
       red: {
@@ -33,6 +34,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: 'Roboto, sans-serif',
+        heading: 'Poppins, sans-serif',
       }
     },
   },

@@ -2,7 +2,7 @@ import { Logo } from "../components/Logo";
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
 
-export function SignIn() {
+export function SignUp() {
   return(
     <div className="h-screen max-w-[1120px] mx-auto flex flex-1 justify-between items-center">
       <Logo />
@@ -11,17 +11,19 @@ export function SignIn() {
           Faça o login
         </h2>
         <form className="flex flex-col gap-8">
+          <Input label="Seu nome" type="text" id="name" placeholder="Digite seu nome completo" />
+
           <Input label="Email" type="email" id="email" placeholder="example@email.com" />
 
           <Input label="Senha" type="password" id="password" placeholder="************" />
 
-          <Button type="submit" title="Entrar" />
+          <Button type="submit" title="Criar conta" />
 
           <a
             className="font-heading font-medium text-sm text-center" 
             href="#"
           >
-            Criar uma conta
+            Já tenho uma conta
           </a>
         </form>
       </div>

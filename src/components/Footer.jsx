@@ -2,7 +2,7 @@ import footerLogo from "../assets/footer-logo.svg"
 
 export function Footer() {
   return (
-    <div className="w-full bg-blue-700 absolute bottom-0 left-0">
+    <div className="w-full bg-blue-700">
       <div className="w-[1120px] mx-auto py-6 flex items-center justify-between">
         <img src={footerLogo} alt="Logo footer explorer" />
         <p

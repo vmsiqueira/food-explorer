@@ -1,4 +1,5 @@
 import heroImg from "../assets/hero-image.png";
+import { Dish } from "../components/Dish";
 
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
@@ -22,6 +23,13 @@ export function Home() {
             Sinta o cuidado do preparo com ingredientes selecionados
           </p>
         </div>
+      </div>
+
+      <div className="max-w-[1120px] mx-auto my-[64px]">
+        <h2 className="font-heading font-medium text-[32px]">
+          Pratos principais
+        </h2>
+        <Dish />
       </div>
 
       <Footer />

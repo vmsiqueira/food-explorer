@@ -1,14 +1,11 @@
 import heroImg from "../assets/hero-image.png";
-import { Dish } from "../components/Dish";
+import saladImg from "../assets/salad.png";
 
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import { Dish } from "../components/Dish";
 
 export function Home() {
   return(
     <>
-      <Header />
-
       <div className="w-[1120px] h-[260px] mx-auto mt-[164px] flex items-center bg-gradient-to-b from-blue-500 to-blue-700 rounded-md">
         <img
           className="mb-32 ml-[-72px]" 
@@ -29,10 +26,27 @@ export function Home() {
         <h2 className="font-heading font-medium text-[32px]">
           Pratos principais
         </h2>
-        <Dish />
+        <div className="flex items-center justify-start gap-4">
+          <Dish 
+            dishImage={saladImg}
+            dishName="Salada Ravanello"
+            dishDescription="Rabanetes, folhas verdes e molho agridoce salpicados com gergelim"
+            dishPrice="R$ 49,90"
+          />
+          <Dish 
+            dishImage={saladImg}
+            dishName="Salada Ravanello"
+            dishDescription="Rabanetes, folhas verdes e molho agridoce salpicados com gergelim"
+            dishPrice="R$ 49,90"
+          />
+          <Dish 
+            dishImage={saladImg}
+            dishName="Salada Ravanello"
+            dishDescription="Rabanetes, folhas verdes e molho agridoce salpicados com gergelim"
+            dishPrice="R$ 49,90"
+          />
+        </div>
       </div>
-
-      <Footer />
     </>
   )
 }

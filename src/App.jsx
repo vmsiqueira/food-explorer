@@ -1,8 +1,15 @@
-import { Home } from "./pages/Home"
+import { DishSingle } from "./pages/DishSingle"
+
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 export function App() {
  return (
-  <Home />
+  <>
+    <Header />
+    <DishSingle />
+    <Footer />
+  </>
  )
 }
 
